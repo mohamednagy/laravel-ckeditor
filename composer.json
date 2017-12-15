@@ -2,16 +2,29 @@
 	"name": "unisharp/laravel-ckeditor",
 	"description": "JavaScript WYSIWYG web text editor (for laravel).",
 	"type": "library",
-	"keywords": [ "ckeditor", "fckeditor", "editor", "wysiwyg", "html", "richtext", "text", "javascript", "laravel"],
+	"keywords": [
+		"ckeditor",
+		"fckeditor",
+		"editor",
+		"wysiwyg",
+		"html",
+		"richtext",
+		"text",
+		"javascript",
+		"laravel"
+	],
 	"homepage": "http://ckeditor.com",
-	"license": [ "GPL-2.0+", "LGPL-2.1+", "MPL-1.1+" ],
-	"authors": [
-		{
-			"name":  "CKSource",
+	"license": [
+		"GPL-2.0+",
+		"LGPL-2.1+",
+		"MPL-1.1+"
+	],
+	"authors": [{
+			"name": "CKSource",
 			"homepage": "http://cksource.com"
 		},
 		{
-			"name":  "UniSharp Ltd. (Composer Package Maintainer)",
+			"name": "UniSharp Ltd. (Composer Package Maintainer)",
 			"homepage": "http://www.unisharp.com"
 		}
 	],
@@ -28,6 +41,13 @@
 	},
 	"require": {
 		"illuminate/support": "~5.0"
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Unisharp\\Ckeditor\\ServiceProvider"
+			]
+		}
 	},
 	"minimum-stability": "dev"
 }
